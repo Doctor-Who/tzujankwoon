@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1693586349,
-    'checksum' => '4c2b278048fd01ca8d9a800ea63b992c',
+    'timestamp' => 1693588426,
+    'checksum' => 'b5382380fd6dc36ec96c659f751fe854',
     'files' => [
         'user/config' => [
             'media' => [
@@ -19,11 +19,11 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1693586349
+                'modified' => 1693588426
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1693586242
+                'modified' => 1693588396
             ],
             'themes/g5_helium' => [
                 'file' => 'user/config/themes/g5_helium.yaml',
@@ -3871,7 +3871,7 @@ node_modules'
                 'supported' => [
                     0 => 'fr'
                 ],
-                'default_lang' => 'en',
+                'default_lang' => NULL,
                 'include_default_lang' => true,
                 'include_default_lang_file_extension' => true,
                 'translations' => true,

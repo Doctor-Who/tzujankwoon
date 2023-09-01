@@ -2,11 +2,11 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => '/home/badwolf/Website/tzujankwoon/grav-wushu/user/data/flex/indexes/pages.json',
-    'modified' => 1693584906,
+    'modified' => 1693588360,
     'size' => 635,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1693584906,
+        'timestamp' => 1693588360,
         'count' => 3,
         'index' => [
             '' => [
@@ -24,13 +24,13 @@ return [
                 'key' => 'home',
                 'storage_key' => '01.home',
                 'template' => 'default',
-                'storage_timestamp' => 1689705777,
+                'storage_timestamp' => 1693588360,
                 'markdown' => [
                     '' => [
-                        'default' => 1689705777
+                        'default' => 1693588057
                     ]
                 ],
-                'checksum' => '18d65994d3d121e4d0483b0252c83b55'
+                'checksum' => '87a3ed25b46f9bd08e1667c2e4cd3bd3'
             ],
             '02.typography' => [
                 'key' => 'typography',

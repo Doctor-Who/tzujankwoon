@@ -2,15 +2,15 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => '/home/badwolf/Website/tzujankwoon/grav-wushu/user/pages/01.home/default.md',
-    'modified' => 1689705777,
-    'size' => 2418,
+    'modified' => 1693588057,
+    'size' => 2420,
     'data' => [
         'header' => [
             'title' => 'Home',
             'body_classes' => 'title-center title-h1h2'
         ],
         'frontmatter' => 'title: Home
-body_classes: title-center title-h1h2',
+body_classes: \'title-center title-h1h2\'',
         'markdown' => '# Say Hello to Grav!
 ## installation successful...
 
