@@ -18,8 +18,8 @@ languages:
   supported:
     - fr
   default_lang: null
-  include_default_lang: true
-  include_default_lang_file_extension: true
+  include_default_lang: false
+  include_default_lang_file_extension: false
   translations: true
   translations_fallback: true
   session_store_active: false
@@ -98,7 +98,7 @@ pages:
       - form
       - forms
 cache:
-  enabled: true
+  enabled: false
   check:
     method: file
   driver: auto

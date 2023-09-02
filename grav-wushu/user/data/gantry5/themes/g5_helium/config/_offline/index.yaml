@@ -1,5 +1,5 @@
 name: _offline
-timestamp: 1693585822
+timestamp: 1693673723
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -36,7 +36,11 @@ particles:
   content:
     system-content-3997: 'Page Content'
   copyright:
-    copyright-1736: Copyright
+    copyright-1736: Copyleft
   totop:
     totop-8670: 'To Top'
-inherit: {  }
+inherit:
+  default:
+    social-3171: social-3171
+    copyright-1736: copyright-1736
+    totop-8670: totop-8670

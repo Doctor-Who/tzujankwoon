@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/badwolf/Website/tzujankwoon/grav-wushu/user/config/site.yaml',
-    'modified' => 1693588426,
+    'modified' => 1693588911,
     'size' => 360,
     'data' => [
         'title' => 'Tzu Jan Kwoon Wushu Academie',

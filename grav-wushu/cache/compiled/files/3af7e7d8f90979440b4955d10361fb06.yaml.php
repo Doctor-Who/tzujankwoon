@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/badwolf/Website/tzujankwoon/grav-wushu/user/config/system.yaml',
-    'modified' => 1693588396,
-    'size' => 4544,
+    'modified' => 1693594035,
+    'size' => 4547,
     'data' => [
         'absolute_urls' => false,
         'timezone' => 'Europe/Paris',
@@ -27,8 +27,8 @@ return [
                 0 => 'fr'
             ],
             'default_lang' => NULL,
-            'include_default_lang' => true,
-            'include_default_lang_file_extension' => true,
+            'include_default_lang' => false,
+            'include_default_lang_file_extension' => false,
             'translations' => true,
             'translations_fallback' => true,
             'session_store_active' => false,
@@ -124,7 +124,7 @@ return [
             ]
         ],
         'cache' => [
-            'enabled' => true,
+            'enabled' => false,
             'check' => [
                 'method' => 'file'
             ],

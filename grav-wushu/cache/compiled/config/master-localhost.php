@@ -1,9 +1,27 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1693588426,
-    'checksum' => 'b5382380fd6dc36ec96c659f751fe854',
+    'timestamp' => 1693678919,
+    'checksum' => 'b02157f21a90f0984c4154a70e905382',
     'files' => [
+        'user/localhost/config' => [
+            'plugins/gantry5' => [
+                'file' => 'user/localhost/config/plugins/gantry5.yaml',
+                'modified' => 1693678919
+            ],
+            'security' => [
+                'file' => 'user/localhost/config/security.yaml',
+                'modified' => 1693594580
+            ],
+            'site' => [
+                'file' => 'user/localhost/config/site.yaml',
+                'modified' => 1693657632
+            ],
+            'system' => [
+                'file' => 'user/localhost/config/system.yaml',
+                'modified' => 1693657115
+            ]
+        ],
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
@@ -19,11 +37,11 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1693588426
+                'modified' => 1693588911
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1693588396
+                'modified' => 1693594035
             ],
             'themes/g5_helium' => [
                 'file' => 'user/config/themes/g5_helium.yaml',
@@ -412,7 +430,7 @@ return [
             ],
             'gantry5' => [
                 'enabled' => true,
-                'production' => false,
+                'production' => true,
                 'use_media_folder' => true,
                 'offline' => false,
                 'offline_message' => 'Site is currently in offline mode. Please try again later.',
@@ -3820,7 +3838,7 @@ node_modules'
                 4 => 'exe'
             ],
             'sanitize_svg' => true,
-            'salt' => 'fXVuSTbtzKeks5'
+            'salt' => '8oaj16VMx7c2YR'
         ],
         'site' => [
             'title' => 'Tzu Jan Kwoon Wushu Academie',
@@ -3872,8 +3890,8 @@ node_modules'
                     0 => 'fr'
                 ],
                 'default_lang' => NULL,
-                'include_default_lang' => true,
-                'include_default_lang_file_extension' => true,
+                'include_default_lang' => false,
+                'include_default_lang_file_extension' => false,
                 'translations' => true,
                 'translations_fallback' => true,
                 'session_store_active' => false,
@@ -3886,8 +3904,8 @@ node_modules'
                 'debug' => false
             ],
             'home' => [
-                'alias' => '/home',
-                'hide_in_urls' => false
+                'alias' => '/accueil',
+                'hide_in_urls' => true
             ],
             'pages' => [
                 'type' => 'regular',
@@ -3972,7 +3990,7 @@ node_modules'
                 ]
             ],
             'cache' => [
-                'enabled' => true,
+                'enabled' => false,
                 'check' => [
                     'method' => 'file'
                 ],

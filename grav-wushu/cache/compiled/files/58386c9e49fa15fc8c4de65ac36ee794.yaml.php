@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/badwolf/Website/tzujankwoon/grav-wushu/user/data/notifications/12870bc4b7da3a166815d4522e9fd81a.yaml',
-    'modified' => 1693586881,
+    'modified' => 1693683964,
     'size' => 8794,
     'data' => [
-        'last_checked' => 1693586881,
+        'last_checked' => 1693683964,
         'data' => [
             'feed' => [
                 0 => [

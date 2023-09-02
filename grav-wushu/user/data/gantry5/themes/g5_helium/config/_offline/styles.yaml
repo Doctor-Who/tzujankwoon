@@ -1,0 +1,20 @@
+preset: preset5
+accent:
+  color-1: '#a8a7a7'
+  color-2: '#474747'
+link:
+  regular: '#a8a7a7'
+navigation:
+  background: '#474747'
+header:
+  background: '#474747'
+  background-image: 'gantry-media://error/wushu_ko.jpg'
+utility:
+  background: '#474747'
+testimonials:
+  background: '#a8a7a7'
+footer:
+  background: '#474747'
+offcanvas:
+  background: '#474747'
+  toggle-color: '#a8a7a7'

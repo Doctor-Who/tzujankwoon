@@ -2,13 +2,15 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => '/home/badwolf/Website/tzujankwoon/grav-wushu/user/pages/02.typography/default.md',
-    'modified' => 1689705777,
-    'size' => 3959,
+    'modified' => 1693651181,
+    'size' => 3976,
     'data' => [
         'header' => [
-            'title' => 'Typography'
+            'title' => 'Typography',
+            'published' => false
         ],
-        'frontmatter' => 'title: Typography',
+        'frontmatter' => 'title: Typography
+published: false',
         'markdown' => '! Details on the full capabilities of Spectre.css can be found in the [Official Spectre Documentation](https://picturepan2.github.io/spectre/elements.html)
 
 The [Quark theme](https://github.com/getgrav/grav-theme-quark) is the new default theme for Grav built with [Spectre.css](https://picturepan2.github.io/spectre/) the lightweight, responsive and modern CSS framework. Spectre provides  basic styles for typography, elements, and a responsive layout system that utilizes best practices and consistent language design.
