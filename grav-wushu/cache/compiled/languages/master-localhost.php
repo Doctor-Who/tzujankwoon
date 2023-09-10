@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1693585684,
-    'checksum' => '8298d337842660ad97c0bb9446655c10',
+    'timestamp' => 1693689185,
+    'checksum' => '68eb660b1b0fe034e8afaef6fb5c00ad',
     'files' => [
         'system/languages' => [
             'ar' => [
@@ -202,6 +202,10 @@ return [
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/languages.yaml',
                 'modified' => 1689705777
+            ],
+            'plugins/leaflet-address' => [
+                'file' => 'user/plugins/leaflet-address/languages.yaml',
+                'modified' => 1651579980
             ]
         ],
         'user/plugins/flex-objects/languages' => [
@@ -1714,6 +1718,78 @@ Sie haben **2FA** für dieses Konto aktiviert. Bitte benutzen Sie Ihre **2FA** A
                 'DESTINATION_NOT_SPECIFIED' => 'Zielort nicht definiert',
                 'INVALID_MIME_TYPE' => 'Der MIME-Typ %s für die Datei %s ist nicht erlaubt.',
                 'INVALID_FILE_EXTENSION' => 'Die Dateiendung %s ist nicht erlaubt.'
+            ],
+            'PLUGIN_LEAFLET_ADDRESS' => [
+                'ADMIN' => [
+                    'ENABLED' => 'Aktiviert',
+                    'DISABLED' => 'Deaktiviert'
+                ],
+                'SECTION' => [
+                    'GLOBAL_CONFIG' => 'Plugin Einstellungen',
+                    'ADDRESS' => 'Adresse',
+                    'COORDINATES' => 'Koordinaten',
+                    'CONTRIB' => '>[OpenStreetMap](https://www.openstreetmap.org/) ist eine frei editierbare Weltkarte. Sie wird von Leuten wie dir gemacht. Es wäre toll, wenn du dich entscheiden würdest, die OpenStreetMap (OSM) zu verbessern. [LearnOSM](https://learnosm.org/) bietet leicht verständliche Anleitungen, um mit dem Beitragen zu beginnen.',
+                    'FIXTHEMAP' => '[Einen Fehler an OSM melden](https://www.openstreetmap.org/fixthemap?classes=button&target=_blank)'
+                ],
+                'FIELDS' => [
+                    'PLUGIN_STATUS' => [
+                        'LABEL' => 'Plugin Status'
+                    ],
+                    'CDN' => [
+                        'LABEL' => 'CDN',
+                        'HELP' => 'Binden Sie JavaScript- und CSS-Dateien aus dem offiziellen CDN oder lokal ein.'
+                    ],
+                    'MAP_PROVIDER' => [
+                        'LABEL' => 'Leaflet Kartenanbieter',
+                        'HELP' => 'Wählen Sie einen Kartenanbieter.'
+                    ],
+                    'ZOOM_LEVEL' => [
+                        'LABEL' => 'Zoomstufe'
+                    ],
+                    'MARKER_ICON' => [
+                        'LABEL' => 'Marker Symbol',
+                        'HELP' => 'Wählen Sie eine Markierungsfarbe aus.'
+                    ],
+                    'NAME' => [
+                        'LABEL' => 'Name'
+                    ],
+                    'ADDRESS' => [
+                        'LABEL' => 'Strasse'
+                    ],
+                    'ZIP' => [
+                        'LABEL' => 'Postleitzahl'
+                    ],
+                    'LOCALITY' => [
+                        'LABEL' => 'Örtlichkeit (Bspw. Stadt)'
+                    ],
+                    'COUNTRY' => [
+                        'LABEL' => 'Land'
+                    ],
+                    'PHONE' => [
+                        'LABEL' => 'Telefon Nummer'
+                    ],
+                    'EMAIL' => [
+                        'LABEL' => 'E-mail Addresse'
+                    ],
+                    'ADDITIONAL' => [
+                        'LABEL' => 'Zusätzliche Informationen'
+                    ],
+                    'PROVINCE' => [
+                        'LABEL' => 'Staat oder Provinz'
+                    ],
+                    'SEARCH' => [
+                        'LABEL' => 'Suche'
+                    ],
+                    'COORDINATES' => [
+                        'LABEL' => 'Koordinaten'
+                    ],
+                    'LATITUDE' => [
+                        'LABEL' => 'Längengrad'
+                    ],
+                    'LONGITUDE' => [
+                        'LABEL' => 'Breitengrad'
+                    ]
+                ]
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -3437,6 +3513,78 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'LEVEL_CLASSES' => 'Level classes',
                 'LEVEL_CLASSES_HELP' => 'The classes to use for each level of notices depth',
                 'LEVEL_CLASSES_PLACEHOLDER' => 'e.g. yellow, red, blue, green'
+            ],
+            'PLUGIN_LEAFLET_ADDRESS' => [
+                'ADMIN' => [
+                    'ENABLED' => 'Enabled',
+                    'DISABLED' => 'Disabled'
+                ],
+                'SECTION' => [
+                    'GLOBAL_CONFIG' => 'Plugin configuration',
+                    'ADDRESS' => 'Address',
+                    'COORDINATES' => 'Coordinates',
+                    'CONTRIB' => '>[OpenStreetMap](https://www.openstreetmap.org/) is a free editable map of the world. It is made by people like you. It would be great, if you decided to help improving the OpenStreetMap (OSM). [LearnOSM](https://learnosm.org/) provides easy to understand guides to get started with contributing.',
+                    'FIXTHEMAP' => '[Report an error to OSM](https://www.openstreetmap.org/fixthemap?classes=button&target=_blank)'
+                ],
+                'FIELDS' => [
+                    'PLUGIN_STATUS' => [
+                        'LABEL' => 'Plugin status'
+                    ],
+                    'CDN' => [
+                        'LABEL' => 'CDN',
+                        'HELP' => 'Include JavaScript and CSS files from official CDN or local.'
+                    ],
+                    'MAP_PROVIDER' => [
+                        'LABEL' => 'Leaflet Map Provider',
+                        'HELP' => 'Choose a leaflet map provider.'
+                    ],
+                    'ZOOM_LEVEL' => [
+                        'LABEL' => 'Zoom level'
+                    ],
+                    'MARKER_ICON' => [
+                        'LABEL' => 'Marker icon',
+                        'HELP' => 'Choose a marker color.'
+                    ],
+                    'NAME' => [
+                        'LABEL' => 'Name'
+                    ],
+                    'ADDRESS' => [
+                        'LABEL' => 'Street address'
+                    ],
+                    'ZIP' => [
+                        'LABEL' => 'Postal code'
+                    ],
+                    'LOCALITY' => [
+                        'LABEL' => 'Locality (i.e. City)'
+                    ],
+                    'COUNTRY' => [
+                        'LABEL' => 'Country'
+                    ],
+                    'PHONE' => [
+                        'LABEL' => 'Phone number'
+                    ],
+                    'EMAIL' => [
+                        'LABEL' => 'Email address'
+                    ],
+                    'ADDITIONAL' => [
+                        'LABEL' => 'Additional informations'
+                    ],
+                    'PROVINCE' => [
+                        'LABEL' => 'State or Province'
+                    ],
+                    'SEARCH' => [
+                        'LABEL' => 'Search'
+                    ],
+                    'COORDINATES' => [
+                        'LABEL' => 'Coordinates'
+                    ],
+                    'LATITUDE' => [
+                        'LABEL' => 'Latitude'
+                    ],
+                    'LONGITUDE' => [
+                        'LABEL' => 'Longitude'
+                    ]
+                ]
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -27641,6 +27789,78 @@ La **2FA** è abilitata per questo account. Si prega di utilizzare la vostra app
                 'DROPZONE_RESPONSE_ERROR' => 'Il Server ha risposto con il codice {{statusCode}}.',
                 'YES' => 'Si',
                 'NO' => 'No'
+            ],
+            'PLUGIN_LEAFLET_ADDRESS' => [
+                'ADMIN' => [
+                    'ENABLED' => 'Attivo',
+                    'DISABLED' => 'Disattivo'
+                ],
+                'SECTION' => [
+                    'GLOBAL_CONFIG' => 'Impostazioni del plugin',
+                    'ADDRESS' => 'Indirizzo',
+                    'COORDINATES' => 'Coordinate',
+                    'CONTRIB' => '>[OpenStreetMap](https://www.openstreetmap.org/) è una mappa del mondo modificabile. É fatta da persone come te. Sarebbe fantastico se decidessi di migliorare OpenStreetMap (OSM). [LearnOSM](https://learnosm.org/) fornisce istruzioni su come iniziare a contribuire.',
+                    'FIXTHEMAP' => '[Segnala un errore a OSM](https://www.openstreetmap.org/fixthemap?classes=button&target=_blank)'
+                ],
+                'FIELDS' => [
+                    'PLUGIN_STATUS' => [
+                        'LABEL' => 'Stato del plugin'
+                    ],
+                    'CDN' => [
+                        'LABEL' => 'CDN',
+                        'HELP' => 'Includere i file JavaScript e CSS dal CDN ufficiale o locale.'
+                    ],
+                    'MAP_PROVIDER' => [
+                        'LABEL' => 'Leaflet fornitore di mappe',
+                        'HELP' => 'Selezionare un fornitore di mappe.'
+                    ],
+                    'ZOOM_LEVEL' => [
+                        'LABEL' => 'Livello di zoom'
+                    ],
+                    'MARKER_ICON' => [
+                        'LABEL' => 'Simbolo del segno',
+                        'HELP' => 'Selezionare un colore di accentuazione.'
+                    ],
+                    'NAME' => [
+                        'LABEL' => 'Nome'
+                    ],
+                    'ADDRESS' => [
+                        'LABEL' => 'Strada'
+                    ],
+                    'ZIP' => [
+                        'LABEL' => 'Codice postale'
+                    ],
+                    'LOCALITY' => [
+                        'LABEL' => 'Località (ad es. città)'
+                    ],
+                    'COUNTRY' => [
+                        'LABEL' => 'Paese'
+                    ],
+                    'PHONE' => [
+                        'LABEL' => 'Numero di telefono'
+                    ],
+                    'EMAIL' => [
+                        'LABEL' => 'Indirizzo e-mail'
+                    ],
+                    'ADDITIONAL' => [
+                        'LABEL' => 'Ulteriori informazioni'
+                    ],
+                    'PROVINCE' => [
+                        'LABEL' => 'Stato o provincia'
+                    ],
+                    'SEARCH' => [
+                        'LABEL' => 'Ricerca'
+                    ],
+                    'COORDINATES' => [
+                        'LABEL' => 'Coordinate'
+                    ],
+                    'LATITUDE' => [
+                        'LABEL' => 'Longitudine'
+                    ],
+                    'LONGITUDE' => [
+                        'LABEL' => 'Latitudine'
+                    ]
+                ]
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---Titolo: %1$s---# Errore: Frontmatter non valido: \'%2$s\' * *%3$s * * \' \'%4$s \' \'',

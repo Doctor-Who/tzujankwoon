@@ -12,7 +12,7 @@ article:
       limit: ''
     date:
       enabled: published
-      format: 'l, F d, Y'
+      format: 'j F Y'
     read_more:
       enabled: show
       label: ''

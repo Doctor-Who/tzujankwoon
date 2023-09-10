@@ -1,13 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1693678919,
-    'checksum' => 'b02157f21a90f0984c4154a70e905382',
+    'timestamp' => 1694337873,
+    'checksum' => '696097199e532c37cdbdbcf288823d45',
     'files' => [
         'user/localhost/config' => [
             'plugins/gantry5' => [
                 'file' => 'user/localhost/config/plugins/gantry5.yaml',
-                'modified' => 1693678919
+                'modified' => 1694110814
+            ],
+            'plugins/leaflet-address' => [
+                'file' => 'user/localhost/config/plugins/leaflet-address.yaml',
+                'modified' => 1693690628
             ],
             'security' => [
                 'file' => 'user/localhost/config/security.yaml',
@@ -31,6 +35,10 @@ return [
                 'file' => 'user/config/plugins/gantry5.yaml',
                 'modified' => 1693585896
             ],
+            'plugins/leaflet-address' => [
+                'file' => 'user/config/plugins/leaflet-address.yaml',
+                'modified' => 1693690628
+            ],
             'security' => [
                 'file' => 'user/config/security.yaml',
                 'modified' => 1693584699
@@ -41,7 +49,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1693594035
+                'modified' => 1693689098
             ],
             'themes/g5_helium' => [
                 'file' => 'user/config/themes/g5_helium.yaml',
@@ -118,6 +126,10 @@ return [
             'plugins/gantry5' => [
                 'file' => 'user/plugins/gantry5/gantry5.yaml',
                 'modified' => 1662364362
+            ],
+            'plugins/leaflet-address' => [
+                'file' => 'user/plugins/leaflet-address/leaflet-address.yaml',
+                'modified' => 1693689316
             ]
         ],
         'user/themes' => [
@@ -440,6 +452,28 @@ return [
                 'compile_yaml' => true,
                 'compile_twig' => true,
                 '_redirect' => NULL
+            ],
+            'leaflet-address' => [
+                'enabled' => true,
+                'address' => [
+                    'country' => 'FR',
+                    'name' => 'Dojo Roger Leignel',
+                    'address' => '51 Bd de Valmy',
+                    'zip' => '59650',
+                    'city' => 'Villeneuve-d\'Ascq',
+                    'phone' => NULL,
+                    'email' => NULL,
+                    'state' => NULL,
+                    'subaddress' => NULL
+                ],
+                'leaflet' => [
+                    'zoom' => 15,
+                    'icon' => 'Red',
+                    'coordinates' => '50.616002632523525, 3.132160619012577'
+                ],
+                'cdn' => true,
+                'provider' => 'CartoDB.Positron',
+                'path' => '/user/plugins/leaflet-address'
             ]
         ],
         'backups' => [

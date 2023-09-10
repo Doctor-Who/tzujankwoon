@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/badwolf/Website/tzujankwoon/grav-wushu/user/config/system.yaml',
-    'modified' => 1693594035,
+    'modified' => 1693689098,
     'size' => 4547,
     'data' => [
         'absolute_urls' => false,

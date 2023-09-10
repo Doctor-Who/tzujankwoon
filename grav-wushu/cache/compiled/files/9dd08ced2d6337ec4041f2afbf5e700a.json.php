@@ -2,18 +2,18 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => '/home/badwolf/Website/tzujankwoon/grav-wushu/user/data/flex/indexes/pages.json',
-    'modified' => 1693664346,
-    'size' => 1851,
+    'modified' => 1694272185,
+    'size' => 2062,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1693664346,
-        'count' => 8,
+        'timestamp' => 1694272185,
+        'count' => 9,
         'index' => [
             '' => [
                 'key' => '',
                 'storage_key' => '',
                 'template' => 'root',
-                'storage_timestamp' => 1693661187,
+                'storage_timestamp' => 1693693120,
                 'markdown' => [
                     '' => [
                         'root' => 1693656917
@@ -24,11 +24,12 @@ return [
                     '02.typography' => 1693651181,
                     '03.disciplines' => 1693650410,
                     '04.horaire' => 1693650597,
-                    '05.evenements' => 1693650608,
-                    '06.inscription-and-contact' => 1693650608,
-                    'error' => 1693661187
+                    '05.dojo' => 1693693113,
+                    '06.evenements' => 1693685437,
+                    '07.inscription-and-contact' => 1693685417,
+                    'error' => 1693664346
                 ],
-                'checksum' => '34dbce0e785924b293a5ba80224b6ca1'
+                'checksum' => '3c52e35982b5bb26d19bff00151c569c'
             ],
             '01.accueil' => [
                 'key' => 'accueil',
@@ -70,37 +71,49 @@ return [
                 'key' => 'horaire',
                 'storage_key' => '04.horaire',
                 'template' => 'default',
-                'storage_timestamp' => 1693650597,
+                'storage_timestamp' => 1694272185,
                 'markdown' => [
                     '' => [
-                        'default' => 1693650597
+                        'default' => 1694272185
                     ]
                 ],
-                'checksum' => 'fd3991561d0b4d74a31303f2258abb14'
+                'checksum' => '40348ae2d025cb76746d5b8017046b00'
             ],
-            '05.evenements' => [
+            '05.dojo' => [
+                'key' => 'dojo',
+                'storage_key' => '05.dojo',
+                'template' => 'default',
+                'storage_timestamp' => 1694261202,
+                'markdown' => [
+                    '' => [
+                        'default' => 1694261202
+                    ]
+                ],
+                'checksum' => '1826d7a8136fd424f79e9aacdf7c73fa'
+            ],
+            '06.evenements' => [
                 'key' => 'evenements',
-                'storage_key' => '05.evenements',
-                'template' => 'default',
-                'storage_timestamp' => 1693663627,
+                'storage_key' => '06.evenements',
+                'template' => 'blog_list',
+                'storage_timestamp' => 1693685437,
                 'markdown' => [
                     '' => [
-                        'default' => 1693663627
+                        'blog_list' => 1693663627
                     ]
                 ],
-                'checksum' => 'd665cb895c40a0020ca365a8f28138a5'
+                'checksum' => 'ce658b43d6eb4875d834a8cbc4e892cc'
             ],
-            '06.inscription-and-contact' => [
+            '07.inscription-and-contact' => [
                 'key' => 'inscription-and-contact',
-                'storage_key' => '06.inscription-and-contact',
+                'storage_key' => '07.inscription-and-contact',
                 'template' => 'default',
-                'storage_timestamp' => 1693650608,
+                'storage_timestamp' => 1693685417,
                 'markdown' => [
                     '' => [
                         'default' => 1693650512
                     ]
                 ],
-                'checksum' => 'ce39496b2f15471bc975ff5246ca46b7'
+                'checksum' => '52e864adcdb22bf3b882bd87821dc8aa'
             ],
             'error' => [
                 'key' => 'error',

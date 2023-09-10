@@ -102,7 +102,7 @@ content:
           class: ''
           image: 'gantry-media://header/wushu_dragon.jpg'
           title: 'Soyez les bienvenu-es !'
-          desc: "<p>L’Académie Tzu Jan Kwoon Wushu vous accueille au sein du Dojo Roger Leignel pour vous permettre d’étudier les Arts Martiaux, Énergétiques et Culturels Chinois. </p>\n<p>Nous exercerons le corps tout autant que l’esprit afin de cultiver l’énergie intérieure. </p>"
+          desc: "<p>L’ACADÉMIE TZU JAN KWOON WUSHU vous accueille au sein du Dojo Roger Leignel pour vous permettre d’étudier les Arts Martiaux, Énergétiques et Culturels Chinois. </p>\n<p>Nous exercerons le corps tout autant que l’esprit afin de cultiver l’énergie intérieure. </p>"
           link: /disciplines
           linktext: 'En savoir plus'
           buttonclass: button-outline
@@ -121,7 +121,7 @@ content:
   custom-5807:
     title: Intro
     attributes:
-      html: "<div class=\"fp-intro\">\n    <h2 class=\"g-title\">Associez l’art du corps, la dimension morale et spirituelle visant à la maîtrise de soi en s’enrichissant de multiples connaissances et techniques.</h2>\n <h3>Nous proposons au sein de notre académie de nombreuses disciplines :</h3>\n <p>\n    <ul style=\"text-align: left; padding-left: 20px;\">\n        <li>Le Kung Fu Shaolin, Changquan, Nanquan, Hunggar, Wingchun pour le renforcement du corps, la self défense, la force, la souplesse, la vitesse …</li>\n        <li>Le Qigong pour son travail postural, du souffle, de l’assouplissement, …</li>\n        <li>La danse du Lion et du Dragon pour son côté culturel, festif, rythmique, physique</li>\n        <li>Ainsi que des stages avec des grands maitres afin de se perfectionner. Hunggar (maitres Zanetti, Lisek), Shaolin (maitre Shi Miao Hai, Shi heng Jun)\n</li>\n    </ul> \n L’ensemble de ces disciplines vous permettrons de bonifier votre santé, d’accroitre votre vitalité, votre synchronisation, votre agilité et votre précision. <br />L’ensemble de ces domaines sont les branches d’un même arbre source de bien-être, dynamisme, épanouissement.</p>\n    <div class=\"ipad-mockup\">\n        <img src=\"images/home/salue_martial.jpg\" alt=\"\" />\n    </div>\n</div>"
+      html: "<div class=\"fp-intro\">\n<h2>ACADÉMIE TZU JAN KWOON WUSHU</h3>\n    <h3 class=\"g-title\">Associez l’art du corps, la dimension morale et spirituelle visant à la maîtrise de soi en s’enrichissant de multiples connaissances et techniques.</h3>\n <h4>Nous proposons au sein de notre académie de nombreuses disciplines :</h4>\n <p>\n    <ul style=\"text-align: left; padding-left: 20px;\">\n        <li>Le Kung Fu Shaolin, Changquan, Nanquan, Hunggar, Wingchun pour le renforcement du corps, la self défense, la force, la souplesse, la vitesse …</li>\n        <li>Le Qigong pour son travail postural, du souffle, de l’assouplissement, …</li>\n        <li>La danse du Lion et du Dragon pour son côté culturel, festif, rythmique, physique</li>\n        <li>Ainsi que des stages avec des grands maitres afin de se perfectionner. Hunggar (maitres Zanetti, Lisek), Shaolin (maitre Shi Miao Hai, Shi heng Jun)\n</li>\n    </ul> \n L’ensemble de ces disciplines vous permettrons de bonifier votre santé, d’accroitre votre vitalité, votre synchronisation, votre agilité et votre précision. <br />L’ensemble de ces domaines sont les branches d’un même arbre source de bien-être, dynamisme, épanouissement.</p>\n    <div class=\"ipad-mockup\">\n        <img src=\"images/home/salue_martial.jpg\" alt=\"\" />\n    </div>\n</div>"
     block:
       variations: center
   custom-3119:

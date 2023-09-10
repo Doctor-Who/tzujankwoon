@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1693594584,
-    'checksum' => 'e97cfc91ef2abf76a746cb71fe0cb25c',
+    'timestamp' => 1694338170,
+    'checksum' => 'b1f7706e4d384914bd656b61f227bc67',
     'files' => [
         'user/plugins/admin/blueprints/config' => [
             'media' => [
@@ -76,6 +76,10 @@ return [
             'plugins/gantry5' => [
                 'file' => 'user/plugins/gantry5/blueprints.yaml',
                 'modified' => 1662364362
+            ],
+            'plugins/leaflet-address' => [
+                'file' => 'user/plugins/leaflet-address/blueprints.yaml',
+                'modified' => 1651579980
             ]
         ],
         'user/themes' => [
@@ -5311,6 +5315,154 @@ return [
                 'name' => 'plugins.gantry5._redirect',
                 'validation' => 'loose'
             ],
+            'plugins.leaflet-address' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.leaflet-address.enabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_LEAFLET_ADDRESS.FIELDS.PLUGIN_STATUS.LABEL',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_LEAFLET_ADDRESS.ADMIN.ENABLED',
+                    0 => 'PLUGIN_LEAFLET_ADDRESS.ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.leaflet-address.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.leaflet-address.cdn' => [
+                'type' => 'toggle',
+                'label' => 'CDN',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_LEAFLET_ADDRESS.ADMIN.ENABLED',
+                    0 => 'PLUGIN_LEAFLET_ADDRESS.ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.leaflet-address.cdn',
+                'validation' => 'strict'
+            ],
+            'plugins.leaflet-address.provider' => [
+                'type' => 'select',
+                'id' => 'map-provider',
+                'classes' => 'provider-zoom',
+                'label' => 'PLUGIN_LEAFLET_ADDRESS.FIELDS.MAP_PROVIDER.LABEL',
+                'default' => 'OpenStreetMap.Mapnik',
+                'data-options@' => '\\Grav\\Plugin\\LeafletAddressPlugin::leafletProviders',
+                'name' => 'plugins.leaflet-address.provider',
+                'validation' => 'strict'
+            ],
+            'plugins.leaflet-address.leaflet' => [
+                'type' => '_parent',
+                'name' => 'plugins.leaflet-address.leaflet',
+                'form_field' => false
+            ],
+            'plugins.leaflet-address.leaflet.zoom' => [
+                'type' => 'number',
+                'id' => 'map-zoom',
+                'classes' => 'provider-zoom',
+                'label' => 'PLUGIN_LEAFLET_ADDRESS.FIELDS.ZOOM_LEVEL.LABEL',
+                'default' => 13,
+                'validate' => [
+                    'min' => 1,
+                    'max' => 20
+                ],
+                'name' => 'plugins.leaflet-address.leaflet.zoom',
+                'validation' => 'strict'
+            ],
+            'plugins.leaflet-address.leaflet.icon' => [
+                'type' => 'select',
+                'label' => 'PLUGIN_LEAFLET_ADDRESS.FIELDS.MARKER_ICON.LABEL',
+                'default' => 'Blue',
+                'data-options@' => '\\Grav\\Plugin\\LeafletAddressPlugin::markerIcons',
+                'name' => 'plugins.leaflet-address.leaflet.icon',
+                'validation' => 'strict'
+            ],
+            'plugins.leaflet-address.address' => [
+                'type' => '_parent',
+                'name' => 'plugins.leaflet-address.address',
+                'form_field' => false
+            ],
+            'plugins.leaflet-address.address.name' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_LEAFLET_ADDRESS.FIELDS.NAME.LABEL',
+                'name' => 'plugins.leaflet-address.address.name',
+                'validation' => 'strict'
+            ],
+            'plugins.leaflet-address.address.address' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_LEAFLET_ADDRESS.FIELDS.ADDRESS.LABEL',
+                'id' => 'coordinateselector-address',
+                'name' => 'plugins.leaflet-address.address.address',
+                'validation' => 'strict'
+            ],
+            'plugins.leaflet-address.address.zip' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_LEAFLET_ADDRESS.FIELDS.ZIP.LABEL',
+                'id' => 'coordinateselector-zip',
+                'name' => 'plugins.leaflet-address.address.zip',
+                'validation' => 'strict'
+            ],
+            'plugins.leaflet-address.address.city' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_LEAFLET_ADDRESS.FIELDS.LOCALITY.LABEL',
+                'id' => 'coordinateselector-city',
+                'name' => 'plugins.leaflet-address.address.city',
+                'validation' => 'strict'
+            ],
+            'plugins.leaflet-address.address.country' => [
+                'type' => 'select',
+                'label' => 'PLUGIN_LEAFLET_ADDRESS.FIELDS.COUNTRY.LABEL',
+                'default' => 'CH',
+                'data-options@' => '\\Grav\\Plugin\\LeafletAddressPlugin::countryCodes',
+                'id' => 'coordinateselector-country',
+                'name' => 'plugins.leaflet-address.address.country',
+                'validation' => 'strict'
+            ],
+            'plugins.leaflet-address.address.phone' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_LEAFLET_ADDRESS.FIELDS.PHONE.LABEL',
+                'name' => 'plugins.leaflet-address.address.phone',
+                'validation' => 'strict'
+            ],
+            'plugins.leaflet-address.address.email' => [
+                'type' => 'email',
+                'label' => 'PLUGIN_LEAFLET_ADDRESS.FIELDS.EMAIL.LABEL',
+                'validate' => [
+                    'type' => 'email'
+                ],
+                'name' => 'plugins.leaflet-address.address.email',
+                'validation' => 'strict'
+            ],
+            'plugins.leaflet-address.address.subaddress' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_LEAFLET_ADDRESS.FIELDS.ADDITIONAL.LABEL',
+                'name' => 'plugins.leaflet-address.address.subaddress',
+                'validation' => 'strict'
+            ],
+            'plugins.leaflet-address.address.state' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_LEAFLET_ADDRESS.FIELDS.PROVINCE.LABEL',
+                'name' => 'plugins.leaflet-address.address.state',
+                'validation' => 'strict'
+            ],
+            'plugins.leaflet-address.leaflet.coordinates' => [
+                'type' => 'coordinateselector',
+                'label' => false,
+                'display_label' => false,
+                'name' => 'plugins.leaflet-address.leaflet.coordinates',
+                'validation' => 'strict'
+            ],
             'themes.quark' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -6098,6 +6250,27 @@ return [
                     'compile_yaml' => 'plugins.gantry5.compile_yaml',
                     'compile_twig' => 'plugins.gantry5.compile_twig',
                     '_redirect' => 'plugins.gantry5._redirect'
+                ],
+                'leaflet-address' => [
+                    'enabled' => 'plugins.leaflet-address.enabled',
+                    'cdn' => 'plugins.leaflet-address.cdn',
+                    'provider' => 'plugins.leaflet-address.provider',
+                    'leaflet' => [
+                        'zoom' => 'plugins.leaflet-address.leaflet.zoom',
+                        'icon' => 'plugins.leaflet-address.leaflet.icon',
+                        'coordinates' => 'plugins.leaflet-address.leaflet.coordinates'
+                    ],
+                    'address' => [
+                        'name' => 'plugins.leaflet-address.address.name',
+                        'address' => 'plugins.leaflet-address.address.address',
+                        'zip' => 'plugins.leaflet-address.address.zip',
+                        'city' => 'plugins.leaflet-address.address.city',
+                        'country' => 'plugins.leaflet-address.address.country',
+                        'phone' => 'plugins.leaflet-address.address.phone',
+                        'email' => 'plugins.leaflet-address.address.email',
+                        'subaddress' => 'plugins.leaflet-address.address.subaddress',
+                        'state' => 'plugins.leaflet-address.address.state'
+                    ]
                 ]
             ],
             'themes' => [

@@ -1,0 +1,187 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1693585682
+layout:
+  navigation: {  }
+  /header/:
+    -
+      - custom-8874
+  /intro/: {  }
+  /features/: {  }
+  /utility/: {  }
+  /above/: {  }
+  /testimonials/: {  }
+  /expanded/: {  }
+  /container-main/:
+    -
+      -
+        'aside 25':
+          -
+            - position-position-4734
+      -
+        'mainbar 50':
+          -
+            - system-content-1587
+          -
+            - owlcarousel-8088
+          -
+            - 'custom-9664 50'
+            - 'custom-8634 50'
+          -
+            - custom-2865
+      -
+        'sidebar 25':
+          -
+            - position-position-3949
+  footer: {  }
+  /offcanvas/:
+    -
+      - mobile-menu-5697
+structure:
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+  intro:
+    type: section
+    attributes:
+      boxed: ''
+  features:
+    type: section
+    attributes:
+      boxed: ''
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  above:
+    type: section
+    attributes:
+      boxed: ''
+  testimonials:
+    type: section
+    attributes:
+      boxed: ''
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+  aside:
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    attributes:
+      boxed: ''
+content:
+  custom-8874:
+    title: 'Custom HTML'
+    attributes:
+      html: "<h2> Académie Tzujankwoon Wushu  </br> Dojo Roger Leignel </h2>\n<p>51 Boulevard de Valmy, 59650 Villeneuve-d'Ascq</p>"
+  position-position-4734:
+    title: Aside
+    attributes:
+      key: aside
+  owlcarousel-8088:
+    title: 'Owl Carousel'
+    attributes:
+      class: ''
+      title: ''
+      nav: enable
+      dots: disable
+      autoplaySpeed: ''
+      imageOverlay: disable
+      items:
+        -
+          class: ''
+          image: 'gantry-media://dojo/dojo_1.jpg'
+          title: ''
+          desc: ''
+          link: ''
+          linktext: ''
+          buttonclass: button-outline
+          disable: '0'
+          name: dojo1
+        -
+          class: ''
+          image: 'gantry-media://dojo/dojo_2.jpg'
+          title: ''
+          desc: ''
+          link: ''
+          linktext: ''
+          buttonclass: button-outline
+          disable: '0'
+          name: dojo2
+        -
+          class: ''
+          image: 'gantry-media://dojo/dojo_3.jpg'
+          title: ''
+          desc: ''
+          link: ''
+          linktext: ''
+          buttonclass: button-outline
+          disable: '0'
+          name: dojo3
+        -
+          class: ''
+          image: 'gantry-media://dojo/dojo_4.jpg'
+          title: ''
+          desc: ''
+          link: ''
+          linktext: ''
+          buttonclass: button-outline
+          disable: '0'
+          name: dojo4
+  custom-9664:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div class=\"g-title\">La salle : le Wuguan</div>\n<p><strong>Une salle de 500 m² accueillante, très zen et lumineuse</strong></p>\n<ul>\n<li>Au rez de chaussée,</li>\n<li>Accès PMR, </li>\n<li>Exclusivement destinée aux arts martiaux, et de remise en forme,</li>\n<li>50% tatamis permanents au sol / 50% parquet permanents au sol.</li>\n</ul>\n<h4>Capacité d’accueil</h4>\n<ul>\n<li>2 vestiaires Femmes,</li>\n<li>2 vestiaires Hommes,</li>\n<li>Douches spacieuses + WC individuel, </li>\n<li>Une douche PMR.</li>\n</ul>\n<h4>Convivialité</h4>\n<ul>\n<li>Coin bar pour les pots de l’amitié.</li>\n</ul>"
+    block:
+      variations: 'title1 box1'
+  custom-8634:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div class=\"g-title\">Plan d'accès du Dojo</div>\n{% include \"partials/leaflet-address-map.html.twig\" with {'config': config.plugins['leaflet-address']} %}"
+      twig: '1'
+    block:
+      variations: title-gradient
+  custom-2865:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div class=\"g-title\">Matériels Arts Martiaux et Sports de contact</div>\n<ul>\n<li>2 x sacs de frappe, </li>\n<li>1 x makiwara, </li>\n<li>Barre de danse, </li>\n<li>Paos, </li>\n<li>Boucliers de frappes et pattes d’ours,</li>\n<li>Plots de parcours.</li>\n</ul>"
+    block:
+      variations: 'title2 box2'
+  position-position-3949:
+    title: Sidebar
+    attributes:
+      key: sidebar

@@ -112,7 +112,7 @@ content:
           link: 'https://www.facebook.com/tzujankwoon/'
           name: Facebook
         -
-          icon: 'fa fa-instagram'
+          icon: 'fab fa-instagram'
           text: ''
           title: ''
           link: 'https://www.instagram.com/tzujankwoon_/'
@@ -136,7 +136,7 @@ content:
       owner: Doctor-Who
       link: 'https://github.com/Doctor-Who/tzujankwoon'
       additional:
-        text: 'Based on Helium Template'
+        text: ' TZU JAN KWOON WUSHU ACADEMIE'
       css:
         class: ''
   horizontalmenu-9034:
