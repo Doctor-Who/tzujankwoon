@@ -1,0 +1,17 @@
+enabled: true
+address:
+  country:
+  name:
+  address:
+  zip:
+  city:
+  phone:
+  email:
+  state:
+  subaddress:
+leaflet:
+  zoom: 13
+  icon: Red
+  coordinates: 
+cdn: true
+provider: OpenStreetMap.Mapnik

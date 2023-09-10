@@ -1,0 +1,11 @@
+atoms:
+  -
+    id: assets-2921
+    type: assets
+    title: 'Custom CSS / JS'
+    attributes:
+      enabled: '1'
+      css:
+        - { location: '', inline: ".owl-carousel {\n    width: 100%;\n    margin: 0 auto; /* Pour centrer le Carousel */\n}", extra: {  }, priority: '0', name: Owl-Reduce }
+        - { location: '', inline: ".leaflet-container {\n    height: 300px; /* Ajustez la hauteur en pixels selon vos besoins */\n}\n#leaflet-address-map {\n    height: 300px; /* Ajustez la hauteur en pixels selon vos besoins */\n}", extra: {  }, priority: '0', name: Leaflet-Adjust }
+      javascript: {  }

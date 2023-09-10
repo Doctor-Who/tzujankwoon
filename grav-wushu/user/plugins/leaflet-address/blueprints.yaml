@@ -1,0 +1,132 @@
+name: Leaflet Address
+version: 1.0.5
+description: With the Leaflet address plugin you can easily show an address as text and on a leaflet map.
+icon: map
+author:
+  name: Fabian Dennler
+  email: fd@fabforge.ch
+homepage: https://github.com/foxfabi/grav-plugin-leaflet-address
+demo: 
+keywords: grav, plugin, leaflet, map, address
+bugs: https://github.com/foxfabi/grav-plugin-leaflet-address/issues
+docs: https://github.com/foxfabi/grav-plugin-leaflet-address/blob/master/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.5.0' }
+
+form:
+  validation: strict
+  fields:
+    basics:
+      type: section
+      title: PLUGIN_LEAFLET_ADDRESS.SECTION.GLOBAL_CONFIG
+      underline: true
+
+    enabled:
+      type: toggle
+      label: PLUGIN_LEAFLET_ADDRESS.FIELDS.PLUGIN_STATUS.LABEL
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_LEAFLET_ADDRESS.ADMIN.ENABLED
+        0: PLUGIN_LEAFLET_ADDRESS.ADMIN.DISABLED
+      validate:
+        type: bool
+
+    cdn:
+      type: toggle
+      label: CDN
+      help: PLUGIN_LEAFLET_ADDRESS.FIELDS.CDN.HELP
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_LEAFLET_ADDRESS.ADMIN.ENABLED
+        0: PLUGIN_LEAFLET_ADDRESS.ADMIN.DISABLED
+      validate:
+        type: bool
+
+    provider:
+      type: select
+      id: map-provider
+      classes: provider-zoom
+      label: PLUGIN_LEAFLET_ADDRESS.FIELDS.MAP_PROVIDER.LABEL
+      help: PLUGIN_LEAFLET_ADDRESS.FIELDS.MAP_PROVIDER.HELP
+      default: OpenStreetMap.Mapnik
+      data-options@: '\Grav\Plugin\LeafletAddressPlugin::leafletProviders'
+
+    leaflet.zoom:
+      type: number
+      id: map-zoom
+      classes: provider-zoom
+      label: PLUGIN_LEAFLET_ADDRESS.FIELDS.ZOOM_LEVEL.LABEL
+      default: 13
+      validate:
+        min: 1
+        max: 20
+
+    leaflet.icon:
+      type: select
+      label: PLUGIN_LEAFLET_ADDRESS.FIELDS.MARKER_ICON.LABEL
+      help: PLUGIN_LEAFLET_ADDRESS.FIELDS.MARKER_ICON.HELP
+      default: 'Blue'
+      data-options@: '\Grav\Plugin\LeafletAddressPlugin::markerIcons'
+
+    informations:
+        type: section
+        title: PLUGIN_LEAFLET_ADDRESS.SECTION.ADDRESS
+        underline: true
+        fields:
+            columns:
+              type: columns
+              fields:
+                  column1:
+                      type: column
+                      fields:
+                          address.name:
+                              type: text
+                              label: PLUGIN_LEAFLET_ADDRESS.FIELDS.NAME.LABEL
+                          address.address:
+                              type: text
+                              label: PLUGIN_LEAFLET_ADDRESS.FIELDS.ADDRESS.LABEL
+                              id: coordinateselector-address
+                          address.zip:
+                              type: text
+                              label: PLUGIN_LEAFLET_ADDRESS.FIELDS.ZIP.LABEL
+                              id: coordinateselector-zip
+                          address.city:
+                              type: text
+                              label: PLUGIN_LEAFLET_ADDRESS.FIELDS.LOCALITY.LABEL
+                              id: coordinateselector-city
+                          address.country:
+                              type: select
+                              label: PLUGIN_LEAFLET_ADDRESS.FIELDS.COUNTRY.LABEL
+                              default: 'CH'
+                              data-options@: '\Grav\Plugin\LeafletAddressPlugin::countryCodes'
+                              id: coordinateselector-country
+                  column2:
+                      type: column
+                      fields:
+                          address.phone:
+                              type: text
+                              label: PLUGIN_LEAFLET_ADDRESS.FIELDS.PHONE.LABEL
+                          address.email:
+                              type: email
+                              label: PLUGIN_LEAFLET_ADDRESS.FIELDS.EMAIL.LABEL
+                              validate:
+                                  type: email
+                          address.subaddress:
+                              type: text
+                              label: PLUGIN_LEAFLET_ADDRESS.FIELDS.ADDITIONAL.LABEL
+                          address.state:
+                              type: text
+                              label: PLUGIN_LEAFLET_ADDRESS.FIELDS.PROVINCE.LABEL
+    map:
+        type: section
+        title: PLUGIN_LEAFLET_ADDRESS.SECTION.COORDINATES
+        underline: true
+        fields:
+            leaflet.coordinates:
+              type: coordinateselector
+              label: false
+              display_label: false

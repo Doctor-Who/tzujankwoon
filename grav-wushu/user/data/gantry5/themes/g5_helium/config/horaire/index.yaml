@@ -1,0 +1,61 @@
+name: horaire
+timestamp: 1694334629
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1693585682
+positions:
+  sidebar: Sidebar
+sections:
+  navigation: Navigation
+  intro: Intro
+  features: Features
+  utility: Utility
+  above: Above
+  testimonials: Testimonials
+  expanded: Expanded
+  header: Header
+  aside: Aside
+  sidebar: Sidebar
+  mainbar: Mainbar
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  messages:
+    system-messages-5424: 'System Messages'
+  logo:
+    logo-7264: 'Logo / Image'
+    logo-5130: 'Logo / Image'
+  menu:
+    menu-7902: Menu
+  social:
+    social-4615: Social
+  custom:
+    custom-6614: 'Custom HTML'
+    custom-2450: 'Custom HTML'
+    custom-8861: 'Custom HTML'
+    custom-9343: 'Custom HTML'
+    custom-7259: 'Custom HTML'
+  position:
+    position-position-3949: Sidebar
+  copyright:
+    copyright-3809: Copyleft
+  horizontalmenu:
+    horizontalmenu-7094: 'Horizontal Menu'
+  totop:
+    totop-7788: 'To Top'
+  mobile-menu:
+    mobile-menu-5697: Mobile-menu
+inherit:
+  default:
+    navigation: navigation
+    system-messages-5424: system-messages-7972
+    logo-7264: logo-9608
+    menu-7902: menu-6409
+    social-4615: social-3171
+    footer: footer
+    logo-5130: logo-9571
+    copyright-3809: copyright-1736
+    horizontalmenu-7094: horizontalmenu-9034
+    totop-7788: totop-8670

@@ -1,0 +1,21 @@
+state: enabled
+email: nrochard@gmail.com
+fullname: 'Tzujankwoon Academy'
+title: Master
+hashed_password: $2y$10$JHKRndsdslK7vqpdk3TUI.SwSK3rZYBkvgWmnr1Rps.Al4ZwGDXy6
+language: fr
+content_editor: default
+twofa_enabled: false
+twofa_secret: YMVIGXBSWJ2OJKBP66TVZHLZIL6ZVM3B
+avatar:
+  user/accounts/avatars/03m8ngk1rmnzwxf.jpg:
+    name: 03m8ngk1rmnzwxf.jpg
+    type: image/jpeg
+    size: 40024
+    path: user/accounts/avatars/03m8ngk1rmnzwxf.jpg
+access:
+  site:
+    login: true
+  admin:
+    login: true
+    super: true

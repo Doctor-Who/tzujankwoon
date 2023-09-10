@@ -1,0 +1,18 @@
+enabled: true
+address:
+  country: FR
+  name: 'Dojo Roger Leignel'
+  address: '51 Bd de Valmy'
+  zip: '59650'
+  city: 'Villeneuve-d''Ascq'
+  phone: null
+  email: null
+  state: null
+  subaddress: null
+leaflet:
+  zoom: 15
+  icon: Red
+  coordinates: '50.616002632523525, 3.132160619012577'
+cdn: true
+provider: CartoDB.Positron
+path: /user/plugins/leaflet-address

@@ -1,0 +1,133 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1693585682
+layout:
+  navigation: {  }
+  /header/:
+    -
+      - custom-6614
+  /intro/: {  }
+  /features/: {  }
+  /utility/: {  }
+  /above/: {  }
+  /testimonials/: {  }
+  /expanded/: {  }
+  /container-main/:
+    -
+      -
+        'aside 25': {  }
+      -
+        'mainbar 50':
+          -
+            - custom-2450
+          -
+            - 'custom-8861 33.3'
+            - 'custom-9343 33.3'
+            - 'custom-7259 33.3'
+      -
+        'sidebar 25':
+          -
+            - position-position-3949
+  footer: {  }
+  /offcanvas/:
+    -
+      - mobile-menu-5697
+structure:
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+  intro:
+    type: section
+    attributes:
+      boxed: ''
+  features:
+    type: section
+    attributes:
+      boxed: ''
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  above:
+    type: section
+    attributes:
+      boxed: ''
+  testimonials:
+    type: section
+    attributes:
+      boxed: ''
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+  aside:
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    attributes:
+      boxed: ''
+content:
+  custom-6614:
+    title: 'Custom HTML'
+    attributes:
+      html: '<h2> Académie Tzujankwoon Wushu</h2>'
+  custom-2450:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div class=\"g-title\">Horaires des cours de Kung Fu et Qi Gong</div>\n"
+    block:
+      variations: 'title-center title-outline rounded'
+  custom-8861:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div class=\"g-title\">Kung Fu : Cours Enfants</div>\n<table style=\"border-collapse: collapse; width: 100%;\">\n    <tbody>\n        <tr>\n            <td style=\"width: 40%; text-align: right;\">Lundi</td>\n            <td style=\"width: 60%; background-color: #ff546c; color: white;\">18h - 19h</td>\n        </tr>\n        <tr>\n            <td style=\"width: 40%; text-align: right;\">Mardi</td>\n            <td style=\"width: 60%; background-color: #ff546c; color: white;\"> </td>\n        </tr>\n        <tr>\n            <td style=\"width: 40%; text-align: right;\">Mercredi</td>\n            <td style=\"width: 60%; background-color: #ff546c; color: white;\">10h30 - 12h</td>\n        </tr>\n        <tr>\n            <td style=\"width: 40%; text-align: right;\">Jeudi</td>\n            <td style=\"width: 60%; background-color: #ff546c; color: white;\"> </td>\n        </tr>\n        <tr>\n            <td style=\"width: 40%; text-align: right;\">Vendredi</td>\n            <td style=\"width: 60%; background-color: #ff546c; color: white;\">18h - 19h30</td>\n        </tr>\n        <!-- Ajoutez d'autres jours et plages horaires ici -->\n    </tbody>\n</table>"
+    block:
+      variations: 'rounded shadow title1 box-outline'
+  custom-9343:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div class=\"g-title\">Qi-Gong : Cours Adultes et Ados (dès 14 ans)</div>\n<table style=\"border-collapse: collapse; width: 100%;\">\n    <tbody>\n        <tr>\n            <td style=\"width: 40%; text-align: right;\">Lundi</td>\n            <td style=\"width: 60%; background: linear-gradient(90deg, #e84a5f, #2a363b); color: white;\"></td>\n        </tr>\n        <tr>\n            <td style=\"width: 40%; text-align: right;\">Mardi</td>\n            <td style=\"width: 60%; background: linear-gradient(90deg, #e84a5f, #2a363b); color: white;\"></td>\n        </tr>\n        <tr>\n            <td style=\"width: 40%; text-align: right;\">Mercredi</td>\n            <td style=\"width: 60%; background: linear-gradient(90deg, #e84a5f, #2a363b); color: white;\">12h - 13h30</td>\n        </tr>\n        <tr>\n            <td style=\"width: 40%; text-align: right;\">Jeudi</td>\n            <td style=\"width: 60%; background: linear-gradient(90deg, #e84a5f, #2a363b); color: white;\"></td>\n        </tr>\n        <tr>\n            <td style=\"width: 40%; text-align: right;\">Vendredi</td>\n            <td style=\"width: 60%; background: linear-gradient(90deg, #e84a5f, #2a363b); color: white;\"></td>\n        </tr>\n        <!-- Ajoutez d'autres jours et plages horaires ici -->\n    </tbody>\n</table>"
+    block:
+      variations: 'title-gradient box-outline shadow rounded'
+  custom-7259:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div class=\"g-title\">Kung Fu : Cours Adultes</div>\n<table style=\"border-collapse: collapse; width: 100%;\">\n    <tbody>\n        <tr>\n            <td style=\"width: 40%; text-align: right;\">Lundi</td>\n            <td style=\"width: 60%; background-color: #303e44; color: white;\"></td>\n        </tr>\n        <tr>\n            <td style=\"width: 40%; text-align: right;\">Mardi</td>\n            <td style=\"width: 60%; background-color: #303e44; color: white;\">19h30 - 21h</td>\n        </tr>\n        <tr>\n            <td style=\"width: 40%; text-align: right;\">Mercredi</td>\n            <td style=\"width: 60%; background-color: #303e44; color: white;\"></td>\n        </tr>\n        <tr>\n            <td style=\"width: 40%; text-align: right;\">Jeudi</td>\n            <td style=\"width: 60%; background-color: #303e44; color: white;\">12h - 13h30</td>\n        </tr>\n        <tr>\n            <td style=\"width: 40%; text-align: right;\">Vendredi</td>\n            <td style=\"width: 60%; background-color: #303e44; color: white;\">19h30 - 21h</td>\n        </tr>\n        <!-- Ajoutez d'autres jours et plages horaires ici -->\n    </tbody>\n</table>"
+    block:
+      variations: 'title2 box-outline shadow rounded'
+  position-position-3949:
+    title: Sidebar
+    attributes:
+      key: sidebar

@@ -1,0 +1,150 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1693585682
+layout:
+  /navigation/:
+    -
+      - system-messages-7972
+    -
+      - 'logo-9608 15'
+      - 'menu-6409 65'
+      - 'social-3171 20'
+  /header/:
+    -
+      - owlcarousel-2348
+  /intro/: {  }
+  /features/: {  }
+  /utility/: {  }
+  /above/: {  }
+  /testimonials/: {  }
+  /expanded/: {  }
+  /container-main/:
+    -
+      -
+        'aside 25': {  }
+      -
+        'mainbar 50':
+          -
+            - system-content-1587
+      -
+        'sidebar 25':
+          -
+            - position-position-3949
+  /footer/:
+    -
+      - 'logo-9571 10'
+      - 'copyright-1736 30'
+      - 'horizontalmenu-9034 45'
+      - 'totop-8670 15'
+  /offcanvas/:
+    -
+      - mobile-menu-5697
+structure:
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+  intro:
+    type: section
+    attributes:
+      boxed: ''
+  features:
+    type: section
+    attributes:
+      boxed: ''
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  above:
+    type: section
+    attributes:
+      boxed: ''
+  testimonials:
+    type: section
+    attributes:
+      boxed: ''
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+  aside:
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+  offcanvas:
+    attributes:
+      boxed: ''
+content:
+  logo-9608:
+    title: 'Logo / Image'
+  social-3171:
+    attributes:
+      items:
+        -
+          icon: 'fa fa-facebook fa-fw'
+          text: ''
+          title: ''
+          link: 'https://www.facebook.com/tzujankwoon/'
+          name: Facebook
+        -
+          icon: 'fab fa-instagram'
+          text: ''
+          title: ''
+          link: 'https://www.instagram.com/tzujankwoon_/'
+          name: Instagram
+    block:
+      class: g-social-header
+  owlcarousel-2348:
+    title: 'Owl Carousel'
+  position-position-3949:
+    title: Sidebar
+    attributes:
+      key: sidebar
+  logo-9571:
+    title: 'Logo / Image'
+  copyright-1736:
+    title: Copyleft
+    attributes:
+      date:
+        start: '2023'
+        end: now
+      owner: Doctor-Who
+      link: 'https://github.com/Doctor-Who/tzujankwoon'
+      additional:
+        text: ' TZU JAN KWOON WUSHU ACADEMIE'
+      css:
+        class: ''
+  horizontalmenu-9034:
+    title: 'Horizontal Menu'
+    attributes:
+      items: {  }
+  totop-8670:
+    title: 'To Top'
+    attributes:
+      content: 'Haut de page'
+      title: 'Haut de page'
