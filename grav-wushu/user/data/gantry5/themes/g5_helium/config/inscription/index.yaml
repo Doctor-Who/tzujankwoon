@@ -1,0 +1,72 @@
+name: inscription
+timestamp: 1699200681
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1693585682
+positions:
+  sidebar: Sidebar
+sections:
+  navigation: Navigation
+  intro: Intro
+  features: Features
+  utility: Utility
+  above: Above
+  testimonials: Testimonials
+  expanded: Expanded
+  header: Header
+  aside: Aside
+  sidebar: Sidebar
+  mainbar: Mainbar
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  messages:
+    system-messages-6289: 'System Messages'
+  logo:
+    logo-6811: 'Logo / Image'
+    logo-9291: 'Logo / Image'
+  menu:
+    menu-1871: Menu
+  social:
+    social-6500: Social
+  custom:
+    custom-6614: 'Custom HTML'
+    custom-6554: 'Custom HTML'
+  content:
+    system-content-7222: 'Page Content'
+  position:
+    position-position-6345: Sidebar
+  copyright:
+    copyright-4124: Copyleft
+  horizontalmenu:
+    horizontalmenu-4381: 'Horizontal Menu'
+  totop:
+    totop-6693: 'To Top'
+  mobile-menu:
+    mobile-menu-7127: Mobile-menu
+inherit:
+  default:
+    navigation: navigation
+    system-messages-6289: system-messages-7972
+    logo-6811: logo-9608
+    menu-1871: menu-6409
+    social-6500: social-3171
+    footer: footer
+    logo-9291: logo-9571
+    copyright-4124: copyright-1736
+    horizontalmenu-4381: horizontalmenu-9034
+    totop-6693: totop-8670
+  horaire:
+    intro: intro
+    features: features
+    utility: utility
+    above: above
+    testimonials: testimonials
+    expanded: expanded
+    aside: aside
+    sidebar: sidebar
+    position-position-6345: position-position-3949
+    offcanvas: offcanvas
+    mobile-menu-7127: mobile-menu-5697

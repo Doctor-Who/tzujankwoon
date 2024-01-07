@@ -1,5 +1,5 @@
 name: horaire
-timestamp: 1694334629
+timestamp: 1699117571
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -37,6 +37,8 @@ particles:
     custom-8861: 'Custom HTML'
     custom-9343: 'Custom HTML'
     custom-7259: 'Custom HTML'
+  content:
+    system-content-5206: 'Page Content'
   position:
     position-position-3949: Sidebar
   copyright:

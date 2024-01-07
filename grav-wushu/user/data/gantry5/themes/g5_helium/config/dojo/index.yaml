@@ -1,5 +1,5 @@
 name: dojo
-timestamp: 1694264080
+timestamp: 1694870663
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -23,15 +23,6 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  messages:
-    system-messages-9929: 'System Messages'
-  logo:
-    logo-2757: 'Logo / Image'
-    logo-6343: 'Logo / Image'
-  menu:
-    menu-3541: Menu
-  social:
-    social-3647: Social
   custom:
     custom-8874: 'Custom HTML'
     custom-9664: 'Custom HTML'
@@ -44,22 +35,31 @@ particles:
     system-content-1587: 'Page Content'
   owlcarousel:
     owlcarousel-8088: 'Owl Carousel'
+  mobile-menu:
+    mobile-menu-5697: Mobile-menu
+  messages:
+    system-messages-9929: 'System Messages'
+  logo:
+    logo-2757: 'Logo / Image'
+    logo-6343: 'Logo / Image'
+  menu:
+    menu-3541: Menu
+  social:
+    social-3647: Social
   copyright:
     copyright-3102: Copyleft
   horizontalmenu:
     horizontalmenu-6183: 'Horizontal Menu'
   totop:
     totop-3965: 'To Top'
-  mobile-menu:
-    mobile-menu-5697: Mobile-menu
 inherit:
   default:
     navigation: navigation
+    footer: footer
     system-messages-9929: system-messages-7972
     logo-2757: logo-9608
     menu-3541: menu-6409
     social-3647: social-3171
-    footer: footer
     logo-6343: logo-9571
     copyright-3102: copyright-1736
     horizontalmenu-6183: horizontalmenu-9034

@@ -6,7 +6,7 @@ admin/images/preset4.png	9beebb6d87c64ff47f6dd4969131ea88
 admin/images/preset5.png	57ffde03f72207c0b13d56e2c4254646
 admin/images/preset6.png	811be19e12ceef212a89941049c14fbe
 admin/templates/pages/about/about.html.twig	54dbcb3d8644b22f168184f9e0cdcb14
-blueprints.yaml	43d9886d5f092a5b564d11ff0eff1d1e
+blueprints.yaml	c068f48a192218603e3d42bf4caed893
 blueprints/styles/above.yaml	08e3b34af01e786436cdc45e2311ebde
 blueprints/styles/accent.yaml	88b7140fde979d903e0ba332dca7c588
 blueprints/styles/base.yaml	eb099f24a6083962727fce82fc643fde
@@ -136,7 +136,7 @@ fonts/rockettheme-apps/rockettheme-apps.woff	f1258374fedaa30401743337048a64bb
 fonts/rockettheme-apps/rockettheme-apps.woff2	0b76f0674592d3d4653e6524045e890e
 g5_helium.yaml	c992c6c2943becc7320a32e402e7e4f8
 gantry/presets.yaml	4edfd8f32f98ba3020831b1ed61db43f
-gantry/theme.yaml	3eb40175a8248f4121eb339dbc4a02eb
+gantry/theme.yaml	1a57806519315a370cb443dc4df33081
 images/above/img01.jpeg	45d1bc6fa1ac764f15b937a1e1e9a377
 images/above/img02.jpeg	c08f1ce863d7c69e1b73ce49f8b48416
 images/header/img01.jpg	fb3b9862ecc04e7206e246659e68f2af

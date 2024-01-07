@@ -26,6 +26,8 @@ layout:
             - 'custom-8861 33.3'
             - 'custom-9343 33.3'
             - 'custom-7259 33.3'
+          -
+            - system-content-5206
       -
         'sidebar 25':
           -
@@ -127,6 +129,9 @@ content:
       html: "<div class=\"g-title\">Kung Fu : Cours Adultes</div>\n<table style=\"border-collapse: collapse; width: 100%;\">\n    <tbody>\n        <tr>\n            <td style=\"width: 40%; text-align: right;\">Lundi</td>\n            <td style=\"width: 60%; background-color: #303e44; color: white;\"></td>\n        </tr>\n        <tr>\n            <td style=\"width: 40%; text-align: right;\">Mardi</td>\n            <td style=\"width: 60%; background-color: #303e44; color: white;\">19h30 - 21h</td>\n        </tr>\n        <tr>\n            <td style=\"width: 40%; text-align: right;\">Mercredi</td>\n            <td style=\"width: 60%; background-color: #303e44; color: white;\"></td>\n        </tr>\n        <tr>\n            <td style=\"width: 40%; text-align: right;\">Jeudi</td>\n            <td style=\"width: 60%; background-color: #303e44; color: white;\">12h - 13h30</td>\n        </tr>\n        <tr>\n            <td style=\"width: 40%; text-align: right;\">Vendredi</td>\n            <td style=\"width: 60%; background-color: #303e44; color: white;\">19h30 - 21h</td>\n        </tr>\n        <!-- Ajoutez d'autres jours et plages horaires ici -->\n    </tbody>\n</table>"
     block:
       variations: 'title2 box-outline shadow rounded'
+  system-content-5206:
+    block:
+      variations: 'center shadow'
   position-position-3949:
     title: Sidebar
     attributes:

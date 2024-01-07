@@ -102,6 +102,10 @@ structure:
 content:
   logo-9608:
     title: 'Logo / Image'
+    attributes:
+      image: 'gantry-media://logo/tzujankwoon_logo.svg'
+      height: 150px
+      svg: ''
   social-3171:
     attributes:
       items:
@@ -127,6 +131,10 @@ content:
       key: sidebar
   logo-9571:
     title: 'Logo / Image'
+    attributes:
+      image: 'gantry-media://logo/tzujankwoon_logo.svg'
+      height: 100px
+      svg: ''
   copyright-1736:
     title: Copyleft
     attributes:

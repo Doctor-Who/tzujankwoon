@@ -54,7 +54,7 @@ pages:
     page: true
     twig: true
   markdown:
-    extra: false
+    extra: true
     auto_line_breaks: true
     auto_url_links: true
     escape_markup: false

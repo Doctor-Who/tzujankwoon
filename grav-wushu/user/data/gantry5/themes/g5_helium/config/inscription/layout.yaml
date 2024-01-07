@@ -1,0 +1,143 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1693585682
+layout:
+  navigation: {  }
+  /header/:
+    -
+      - custom-6614
+  intro: {  }
+  features: {  }
+  utility: {  }
+  above: {  }
+  testimonials: {  }
+  expanded: {  }
+  /container-main/:
+    -
+      -
+        'aside 25': {  }
+      -
+        'mainbar 50':
+          -
+            - system-content-7222
+          -
+            - custom-6554
+      -
+        'sidebar 25': {  }
+  footer: {  }
+  offcanvas: {  }
+structure:
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+      variations: ''
+  intro:
+    type: section
+    inherit:
+      outline: horaire
+      include:
+        - attributes
+        - block
+        - children
+  features:
+    type: section
+    inherit:
+      outline: horaire
+      include:
+        - attributes
+        - block
+        - children
+  utility:
+    type: section
+    inherit:
+      outline: horaire
+      include:
+        - attributes
+        - block
+        - children
+  above:
+    type: section
+    inherit:
+      outline: horaire
+      include:
+        - attributes
+        - block
+        - children
+  testimonials:
+    type: section
+    inherit:
+      outline: horaire
+      include:
+        - attributes
+        - block
+        - children
+  expanded:
+    type: section
+    inherit:
+      outline: horaire
+      include:
+        - attributes
+        - block
+        - children
+  aside:
+    inherit:
+      outline: horaire
+      include:
+        - attributes
+        - block
+        - children
+    block:
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+    attributes:
+      class: ''
+      variations: ''
+  sidebar:
+    type: section
+    subtype: aside
+    inherit:
+      outline: horaire
+      include:
+        - attributes
+        - block
+        - children
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: horaire
+      include:
+        - attributes
+        - block
+        - children
+content:
+  custom-6614:
+    title: 'Custom HTML'
+    attributes:
+      html: '<h2> Académie Tzujankwoon Wushu</h2>'
+  custom-6554:
+    title: 'Custom HTML'
+    attributes:
+      enabled: 0
+      html: '{% include "08.contact/form.html.twig" %}'
