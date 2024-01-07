@@ -18,7 +18,7 @@
 
 `sudo apt install php8.2`
 
-`sudo apt install php8.2-mysql php8.2-zip php8.2-curl`
+`sudo apt install php8.2-mysql php8.2-zip php8.2-curl php8.2-gd php8.2-dom php8.2-mbstring php8.2-xml`
 
 ### Lancer un serveur PHP de dev
 
