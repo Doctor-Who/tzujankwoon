@@ -8,11 +8,16 @@
 
 ### Install de PHP et des extensions nécessaires pour Pop_OS!
 
-`sudo apt update `
-`sudo apt install software-properties-common`
-`sudo add-apt-repository ppa:ondrej/php`
 `sudo apt update`
+
+`sudo apt install software-properties-common`
+
+`sudo add-apt-repository ppa:ondrej/php`
+
+`sudo apt update`
+
 `sudo apt install php8.2`
+
 `sudo apt install php8.2-mysql php8.2-zip php8.2-curl`
 
 ### Lancer un serveur PHP de dev
